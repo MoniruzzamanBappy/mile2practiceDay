@@ -162,3 +162,27 @@ hr {
     text-decoration: none;
     color: #562EFF;
 }
+
+/* course design */
+.course-section {
+    width: 870px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.top-course {
+    margin-top: 23px;
+    margin-left: 33px;
+}
+
+.courses {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 6px;
+
+}
+
+.course>img {
+    width: 224px;
+    height: 104px;
+}
