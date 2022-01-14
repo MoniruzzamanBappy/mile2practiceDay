@@ -96,6 +96,9 @@ main {
 
 .player-heading, .blog-heading {
     margin-bottom: 40px;
+
+    font-weight: 500;
+    font-size: 24px;
     color: #562EFF;
 }
 
@@ -121,7 +124,9 @@ main {
     margin-right: 16px;
 }
 
-/* strait line */
+/*===================
+    strait line
+    ================= */
 
 hr {
     border: 1px solid #D1D1D1;
@@ -129,7 +134,9 @@ hr {
     margin-bottom: 0px;
 }
 
-/* Top Blog design */
+/*====================
+     Top Blog design 
+     =================*/
 
 .blog-container {
     margin-left: 30px;
@@ -163,26 +170,94 @@ hr {
     color: #562EFF;
 }
 
-/* course design */
+/* =================
+    course design 
+===================*/
 .course-section {
     width: 870px;
     background-color: #ffffff;
     border-radius: 5px;
+    margin-bottom: 28px;
 }
 
 .top-course {
     margin-top: 23px;
     margin-left: 33px;
+    margin-right: 33px;
+}
+
+.top-course>h1 {
+    font-weight: 500;
+    font-size: 24px;
+    color: #562EFF;
 }
 
 .courses {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 24px;
     margin-left: 6px;
+    grid-column-gap: 23.5px;
 
+}
+
+.course {
+    width: 252.4px;
+    border: 0;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+    margin-bottom: 23px;
 }
 
 .course>img {
     width: 224px;
     height: 104px;
+}
+
+.course-details {
+    width: 224px;
+}
+
+.course-details>h2 {
+    font-weight: 500;
+    font-size: 19px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.course-details>p>a {
+    text-decoration: none;
+    font-size: 14.6913px;
+    color: #ED6B4F;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.fa-star-half-alt.empty {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.course-info>p {
+    color: #A2A2A2;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+    font-size: 12px;
+}
+
+.course-duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+    padding: 5px;
 }
