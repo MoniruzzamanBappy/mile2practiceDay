@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    background-color: #9F9F9F;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+}
+
+/* ============================
+    /*navigation Bar Desgn*\
+=============================== */
+
+#header {
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    width: 860px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+.header-container .logo img {
+    width: 40px;
+    margin-right: 16px;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-right: 36px;
+}
+
+.navbar ul .last-child {
+    margin-right: 0;
+}
+
+.last-child img {
+    position: relative;
+    top: 4px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.navbar ul li:hover {
+    border-bottom: 3px solid #fff;
+}
+
+/* ============================
+    /*top player Desgn*\
+=============================== */
+.player-section {
+    width: 870px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 36px;
+    margin-bottom: 21px;
+}
+
+.top-player {
+    margin-left: 33px;
+    margin-top: 33px;
+}
+
+.player-heading, .blog-heading {
+    margin-bottom: 40px;
+    color: #562EFF;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 29px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player>a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.player>img {
+    width: 56px;
+    height: 56px;
+    margin-right: 16px;
+}
+
+/* strait line */
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin: 30px;
+    margin-bottom: 0px;
+}
+
+/* Top Blog design */
+
+.blog-container {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    margin-bottom: 42px;
+}
+
+.blog {
+    display: flex;
+    align-items: center;
+}
+
+.blog>img {
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+}
+
+.blog-info>p {
+    color: #9F9F9F;
+}
+
+.blog-info>p>a {
+    text-decoration: none;
+    color: #562EFF;
+}
